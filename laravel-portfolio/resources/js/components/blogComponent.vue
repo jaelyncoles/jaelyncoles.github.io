@@ -115,7 +115,7 @@
 		components: {},
 		methods: {
 			onSlideStart(slide) {
-				this.sliding = true;
+				this.sliding = false;
 			},
 			onSlideEnd(slide) {
 				this.sliding = false;

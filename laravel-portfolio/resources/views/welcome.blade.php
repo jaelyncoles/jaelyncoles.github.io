@@ -8,11 +8,76 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis">
+        <link href="https://fonts.googleapis.com/css?family=Italianno|Julius+Sans+One|Satisfy|Staatliches|Voltaire" rel="stylesheet">
+        <style>
+        #jumbo{
+            height:100vh;
+            background-image:url("/img/IMG_4840 copy.JPG");
+             background-size:cover;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            color:white;
+            
+        }
+        #words{
+            text-align:center;
+            
+            
+        }
+        #byline {
+            font-family: 'Italianno', cursive;
+        
+        }
+
+        .display-2 {
+            font-family: "Voltaire", sans-serif;
+            
+        }
+        #img-div{position:relative;
+   padding-top:0px;
+    z-index:0;
+    
+    
+  }
+        #image {
+   display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:-50px;
+    border-style:solid;
+    border-radius:50%;
+    border-color:white;
+    border-width:10px;
+    max-width:100% ;
+    height:auto;}
+
+    #app{
+        padding: 20%;
+    }
+#nav{
+   opacity: 100%;
+   
+}
+        </style>
        <body>
+
+</div>
         <div id="jumbo"class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Jaelyn Coles</h1>
-                <p class="lead">Full-Stack Web Developer</p>
+                    <div id="nav">
+                    <b-nav>
+                        <b-nav-item>About | </b-nav-item>
+                        <b-nav-item>Blog | </b-nav-item>
+                        <b-nav-item>Portfolio | </b-nav-item>
+                        <b-nav-item>Contact | </b-nav-item>
+                        <b-nav-item>Resume | </b-nav-item>
+                    </b-nav>
+                    </div>
+            <div id="words" class="container">
+                <h1 class="display-2">Jaelyn Coles</h1>
+                <h1 id="byline" class="display-2">Full-Stack Web Developer</h1>
+                <div id="image-div">
+                <img id="image" src="/img/IMG_0632 copy.jpg" height=10% width=30%/>
+             </div>
              </div>
         </div>
         <div id="app">
