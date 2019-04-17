@@ -8,80 +8,126 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis">
-        <link href="https://fonts.googleapis.com/css?family=Italianno|Julius+Sans+One|Satisfy|Staatliches|Voltaire" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Italianno|Julius+Sans+One|Open+Sans|Oregano|Satisfy|Staatliches|Voltaire" rel="stylesheet">
+        
         <style>
-        #jumbo{
+        #jumbo {
             height:100vh;
             background-image:url("/img/IMG_4840 copy.JPG");
              background-size:cover;
             background-repeat: no-repeat;
             background-position: 50% 50%;
-            color:white;
+            color:black;
+            font-family: 'Open Sans', sans-serif;
             
         }
-        #words{
+        #words {
             text-align:center;
-            
-            
         }
         #byline {
-            font-family: 'Italianno', cursive;
-        
+            font-family: 'Open Sans', sans-serif;
+            color: black;
+            font-size:50px;
+	        -webkit-text-stroke: 2px white;
         }
-
-        .display-2 {
-            font-family: "Voltaire", sans-serif;
-            
+        #name {
+            font-family: 'Open Sans', sans-serif;
+            color: black;
+	        font-size: 155px;
+	        -webkit-text-stroke: 2px white;   
         }
-        #img-div{position:relative;
-   padding-top:0px;
-    z-index:0;
-    
-    
-  }
+        #img-div {
+            position:relative;
+            padding-top:0px;
+            z-index:0;
+        }
         #image {
-   display:block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom:-50px;
-    border-style:solid;
-    border-radius:50%;
-    border-color:white;
-    border-width:10px;
-    max-width:100% ;
-    height:auto;}
+            display:block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom:-50px;
+            border-style:solid;
+            border-radius:50%;
+            border-color:white;
+            border-width:10px;
+            max-width:100% ;
+            height:auto;
+        }
+        #app {
+    margin-top:300px;
+            background-color:white;
+        }
+        #nav {
+            opacity: 100%;
+        }
+        #blog{
+            margin-top: 200px;
+        }
 
-    #app{
-        padding: 20%;
-    }
-#nav{
-   opacity: 100%;
-   
-}
+        #about{
+            width: 100%;
+            
+
+        #blogJumbo{
+            background-color:#D2BFAB;
+        }
+
+        #text{
+            padding-top:100px;
+        }
         </style>
-       <body>
 
-</div>
+    </head>
+
+    <body>
         <div id="jumbo"class="jumbotron jumbotron-fluid">
-                    <div id="nav">
-                    <b-nav>
-                        <b-nav-item>About | </b-nav-item>
-                        <b-nav-item>Blog | </b-nav-item>
-                        <b-nav-item>Portfolio | </b-nav-item>
-                        <b-nav-item>Contact | </b-nav-item>
-                        <b-nav-item>Resume | </b-nav-item>
-                    </b-nav>
-                    </div>
+            <div id="nav">
+                <b-nav >
+                    <b-nav-item><a href="#about" style="color:black">About | </a></b-nav-item>
+                    <b-nav-item><a href="#blog" style="color:black">Blog | </a> </b-nav-item>
+                    <b-nav-item><a href="#portfolio" style="color:black">Portfolio | </a> </b-nav-item>
+                    <b-nav-item><a href="#contact" style="color:black">Contact | </a> </b-nav-item>
+                    <b-nav-item><a href="#resume" style="color:black">Resume | </a> </b-nav-item>
+                </b-nav>
+            </div>
             <div id="words" class="container">
-                <h1 class="display-2">Jaelyn Coles</h1>
-                <h1 id="byline" class="display-2">Full-Stack Web Developer</h1>
-                <div id="image-div">
+                <h1 id="name">Jaelyn Coles</h1>
+                <h2 id="byline">Full-Stack Web Developer</h2>
+            </div>
+            <div id="image-div">
                 <img id="image" src="/img/IMG_0632 copy.jpg" height=10% width=30%/>
-             </div>
-             </div>
+            </div>
+             
         </div>
+
         <div id="app">
-       <blog-component> </blog-component>
+            <div id="about">
+                <div class="container">
+                    <div class="row">
+                         <div id="text" class="col">
+                             <h1> A little bit About Me... </h1> 
+                                <p>I'm Jaelyn and I'm a full stack developer with a special interest in Digital art and design. I have always considered mysel an artist without the ability to draw,
+                                 so I enjoy making my ideas come to life through programming.
+                            I am very excited to Join a team where I can contribute, grow and learn. </p>
+                         
+                         <br>
+                         <br>
+                         <br>
+                         <br>
+                         </div>
+                        <div class="col">
+                            <about-component></about-component>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+     <div id="blogJumbo"class="jumbotron jumbotron-fluid">
+    <div id=blog>
+              
+            <blog-component></blog-component>
+            </div>
+            </div>
         </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
