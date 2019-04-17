@@ -4,18 +4,14 @@
 			id="carousel-1"
 			v-model="slide"
 			:interval="4000"
-			
-		
 			background="white"
 			img-width="1024"
 			img-height="1480"
-			
 			@sliding-start="onSlideStart"
-			@sliding-end="onSlideEnd"
-		>
-			<!-- Slides with image only -->
+			@sliding-end="onSlideEnd">
+			<!-- Slides with image only h -->
 			<b-carousel-slide img-src="/img/white.png"></b-carousel-slide>
-			<b-carousel-slide img-src="/img/IMG_226975F1E663-1.jpg" ></b-carousel-slide>
+			<b-carousel-slide img-src="/img/IMG_226975F1E663-1.jpg"></b-carousel-slide>
 			<b-carousel-slide img-src="/img/white.png"></b-carousel-slide>
 		</b-carousel>
 	</div>
