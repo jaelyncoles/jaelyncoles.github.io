@@ -4,12 +4,12 @@
 			<b-carousel
 				id="carousel-1"
 				v-model="slide"
-				:interval="4000"
+				:interval="0"
 				controls
 				indicators
-				background="#ababab"
-				img-width="1024"
-				img-height="480"
+				background="white"
+				img-width="500px"
+				img-height="500px"
 				style="text-shadow: 1px 1px 2px #333;"
 				@sliding-start="onSlideStart"
 				@sliding-end="onSlideEnd"
@@ -20,8 +20,8 @@
 					:caption="post.title"
 					:img-src="post.image"
 				>
-					<a :href="post.link" class="btn btn-primary">Video Blog</a>
 					<div id="postText">{{post.text}}</div>
+					<a :href="post.link" class="btn-btn-light">Video Blog</a>
 				</b-carousel-slide>
 			</b-carousel>
 		</div>
@@ -45,8 +45,8 @@
 			                  The topics that were covered included HTML CSS and some javascript. 
 			                  I have some experience with these so I never really ran into any challenges completing the projects.
 			                  I am excited to begin learning full time, and can't wat to see how far I go in the the twelve weeks.`,
-						link: "#",
-						image: "/img/myimagename.jpg"
+						image:"/img/Screen Shot 2019-04-17 at 7.38.54 PM.png",
+						link:"" 
 					},
 					//week
 					{
@@ -60,7 +60,7 @@
 	                  Over the rest of the week we learned a lot about writing HTML, CSS and Bootstrap. We made a campaign website for our first project. I enjoyed using Bootstrap and CSS to design my page. That’s really what interested me in coding in the first place.
 	                  I enjoy watching a blank webpage become something great.`,
 						link: "#",
-						image: "#"
+						image: "/img/Screen Shot 2019-04-17 at 7.38.54 PM.png"
 					},
 					//week2
 					{
@@ -71,7 +71,7 @@
 	                    Just kidding. I was happy I got the experience of writing down what I needed and finding the JS methods to make them functional. The downside of it was I became overwhelmed many times while completing the exercises. I also feel like I fell behind this week because I was determined to build them myself but it took me way more time than anticipated.
 	                    Overall this week was great. I am enjoying my Time in camp, and I am really excited to see what come in the next week.`,
 						link: "#",
-						image: "#"
+						image: "/img/Screen Shot 2019-04-17 at 7.40.06 PM.png"
 					},
 					//week3
 					{

@@ -106,15 +106,15 @@
                     <div class="row">
                          <div id="text" class="col">
                              <h1> A little bit About Me... </h1> 
-                                <p>I'm Jaelyn and I'm a full stack developer with a special interest in Digital art and design. I have always considered mysel an artist without the ability to draw,
-                                 so I enjoy making my ideas come to life through programming.
-                            I am very excited to Join a team where I can contribute, grow and learn. </p>
-                         
-                         <br>
-                         <br>
-                         <br>
-                         <br>
-                         </div>
+                                <p>I'm Jaelyn and I'm a full stack developer with a special interest in Digital art and design. I have always considered myself an artist without the ability to draw,
+                                 so I enjoy making my ideas come to life through programming. I am currently looking for full-time employment,
+                                 am very excited to Join a team where I can contribute, learn and grow. 
+                             </p>
+                            
+                            <h1 style="color:white">this is space to make the div longer. ive tried everything and im super annoyed so this is going to have to work.  </h1>
+                            <h1 style="color:white">this is space to make the div longer. ive tried everything and im super annoyed so this is going to have to work.  </h1>
+                            
+                             </div>
                         <div class="col">
                             <about-component></about-component>
 
